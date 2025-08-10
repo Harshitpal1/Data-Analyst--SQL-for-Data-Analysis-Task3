@@ -1,85 +1,89 @@
-# Data-Analyst--SQL-for-Data-Analysis-Task3
 # Data Analyst Internship - Task 4: Dashboard Design
 
-[cite_start]This repository contains the solution for the Data Analyst Internship task provided by Elevate Labs[cite: 1, 2].
+[cite_start]This repository contains the deliverables for Task 4 of the Elevate Labs Data Analyst Internship program[cite: 2]. [cite_start]The primary objective of this task was to design an interactive dashboard for business stakeholders using a sales and financial dataset[cite: 4].
 
-***
+## Project Objective
 
-## 📝 Objective
+[cite_start]The goal of this project is to create a dashboard that informs business decisions[cite: 16]. [cite_start]This involves selecting appropriate Key Performance Indicators (KPIs), creating insightful visualizations, and ensuring the dashboard is interactive and user-friendly[cite: 4, 8, 9].
 
-[cite_start]The primary goal of this task is to design an interactive dashboard for business stakeholders[cite: 4]. [cite_start]The intended outcome is to learn how to create dashboards that effectively inform business decisions[cite: 16].
+## Dataset
 
-***
+[cite_start]As per the task guidelines, a sales dataset was used for this analysis[cite: 15]. The specific dataset used here is a pharmaceutical sales dataset, containing daily sales figures for various product categories.
 
-## 🛠️ Tools & Dataset
+* `salesdaily.csv`
+* `saleshourly.csv`
+* `salesmonthly.csv`
+* `salesweekly.csv`
 
-* [cite_start]**Tools**: The recommended tools for this task are **Power BI** or **Tableau**[cite: 5].
-* [cite_start]**Dataset**: The task requires using any **Sales/Financial dataset** available on Kaggle[cite: 15].
+## Tools Used
 
-***
+* [cite_start]**Dashboarding Tools:** The project could be implemented in **Power BI** or **Tableau**[cite: 5].
+* **Data Analysis & Visualization:** **Python** (with pandas and matplotlib libraries) was used for data processing and generating the visual insights for this prototype.
 
-## 📊 Dashboard Design Guide
+## Dashboard Analysis & Visualizations
 
-The dashboard was created following these key guidelines to ensure it is insightful and user-friendly:
+The dashboard design focuses on clarity and insight, presenting key data points to help stakeholders understand business performance at a glance.
 
-* [cite_start]**Key Performance Indicators (KPIs)**: The dashboard prominently features important KPIs such as **Sales, Profit, and Growth** to provide a quick overview of business performance[cite: 8].
-* [cite_start]**Interactivity**: **Slicers and filters** are used to allow stakeholders to explore and analyze the data dynamically[cite: 9].
-* [cite_start]**Trend Analysis**: A **time-series analysis** is included to visualize trends and patterns over different periods[cite: 10].
-* [cite_start]**Summary Cards**: The dashboard includes **cards for totals and summaries** to highlight the most critical figures at a glance[cite: 11].
-* [cite_start]**Visual Consistency**: A **consistent color theme** is applied throughout the dashboard for a clean, professional, and easy-to-understand visual experience[cite: 12].
-* [cite_start]**Navigation**: Where applicable, a **navigation menu** has been created to improve usability, allowing users to easily switch between different views or pages of the report[cite: 13].
+### Key Performance Indicator (KPI): Total Sales
 
-***
+* **Total Sales:** 127,595.50 units
+* [cite_start]This primary KPI gives an immediate summary of the overall business performance[cite: 8, 11].
 
-## ❓ Interview Questions & Answers
+### Visualizations
 
-[cite_start]Here are the answers to the interview questions listed in the task description[cite: 18, 19].
+#### 1. Total Daily Sales Trend
+[cite_start]This line chart provides a time-series analysis of sales, which is crucial for identifying patterns and seasonality[cite: 10].
+![Daily Sales Trend](daily_sales_trend.png)
 
-### What are the key elements of a dashboard?
+#### 2. Total Sales by Weekday
+This bar chart shows the sales distribution across different days of the week, helping to inform operational decisions like staffing and inventory management.
+![Weekday Sales](weekday_sales.png)
 
-The key elements of a well-designed dashboard are:
-* **Clear Visualizations**: Using charts and graphs that are easy to understand.
-* **Key Performance Indicators (KPIs)**: Highlighting the most important metrics.
-* **Interactivity**: Incorporating filters and slicers for data exploration.
-* **Logical Layout**: A clean and organized design.
-* **Time-Series Analysis**: Showing trends over time.
+#### 3. Total Sales by Product Category
+This visualization helps identify the best-performing product categories and those that may require additional marketing efforts.
+![Product Sales](product_sales.png)
 
-### What is a KPI?
+#### 4. Total Monthly Sales
+This chart provides a month-over-month view of sales, essential for tracking performance against monthly targets and observing broader trends.
+![Monthly Sales](monthly_sales.png)
 
-[cite_start]A **Key Performance Indicator (KPI)** is a measurable value that shows how effectively a company is achieving its main business objectives[cite: 20]. Organizations use KPIs to evaluate their success at reaching targets. For instance, in sales, a KPI could be 'Monthly Sales Growth' or 'Average Profit Margin'.
+## Interview Questions & Answers
 
-### What are slicers in Power BI?
+Here are the answers to the interview questions listed in the task description:
 
-[cite_start]**Slicers** in Power BI are a type of on-canvas visual filter[cite: 21]. They provide a user-friendly way for anyone viewing the report to filter the data. For example, a user can click on a specific year in a slicer to see all the visuals on the page update to reflect the data for only that year.
+**1. [cite_start]What are the key elements of a dashboard?** [cite: 19]
+   * [cite_start]**Clear and Relevant KPIs:** High-level metrics that reflect business objectives[cite: 8, 11].
+   * **Data Visualizations:** Charts and graphs for easy data interpretation.
+   * [cite_start]**Interactivity:** Features like slicers and filters allowing users to explore data[cite: 9].
+   * [cite_start]**Time-Series Analysis:** Visuals showing trends over time[cite: 10].
+   * [cite_start]**Logical Layout:** An intuitive and consistently designed user interface[cite: 12].
 
-### Difference between Power BI and Tableau?
+**2. [cite_start]What is a KPI?** [cite: 20]
+   A Key Performance Indicator (KPI) is a measurable value that demonstrates how effectively a company is achieving its key business objectives. [cite_start]For a sales dashboard, KPIs could include Total Sales, Profit Margin, and Sales Growth[cite: 8].
 
-| Feature | Power BI | Tableau |
-| :--- | :--- | :--- |
-| **Ease of Use** | Generally considered more user-friendly for beginners and integrates well with other Microsoft products. | Has a steeper learning curve but offers greater flexibility in creating custom and complex visualizations. |
-| **Cost** | More cost-effective, offering a robust free desktop version. | Generally has a higher licensing cost. |
-| **Data Connectivity**| Excellent connectivity, especially within the Microsoft ecosystem (Azure, SQL Server, Excel). | Also offers extensive data connectivity options and is praised for its performance with large datasets. |
-| **Data Modeling** | Features a powerful data modeling engine (Power Query) integrated into the tool. | Data preparation often relies on Tableau Prep, a separate product. |
+**3. [cite_start]What are slicers in Power BI?** [cite: 21]
+   Slicers in Power BI are on-canvas visual filters that provide a user-friendly way to filter data in a report. [cite_start]They allow users to click buttons or select from a list to dynamically segment the data, updating all visuals on the report page accordingly[cite: 9].
 
-### How do you make a dashboard interactive?
+**4. [cite_start]Difference between Power BI and Tableau?** [cite: 22]
+   | Feature | Power BI | Tableau |
+   | :--- | :--- | :--- |
+   | **User Interface** | Considered more intuitive for beginners, especially those familiar with Excel. | Offers a more flexible and complex interface, often favored by data analysts. |
+   | **Data Connectivity** | Strong integration with Microsoft products (e.g., Excel, Azure). | Known for extensive connectivity to a very wide range of data sources. |
+   | **Cost** | Generally more cost-effective with a free desktop version. | Tends to have a higher price point. |
 
-[cite_start]You can make a dashboard interactive by[cite: 23]:
-* **Adding Slicers and Filters**: This allows users to segment the data.
-* **Enabling Drill-Down**: Letting users click on a part of a visual to see more detailed data.
-* **Using Cross-Filtering**: When a user clicks on a data point in one visual, other visuals on the page are automatically filtered.
-* **Implementing Bookmarks and Buttons**: This creates a custom navigation experience.
+**5. [cite_start]How do you make a dashboard interactive?** [cite: 23]
+   You can make a dashboard interactive by:
+   * [cite_start]Adding slicers and filters for data segmentation[cite: 9].
+   * Enabling drill-down capabilities to view detailed data.
+   * Using cross-filtering, where selections in one visual affect others.
 
-### How do you deal with large datasets in dashboards?
+**6. [cite_start]How do you deal with large datasets in dashboards?** [cite: 24]
+   * **Data Aggregation:** Pre-summarize data to a higher level.
+   * **Data Extracts:** Work with smaller, extracted subsets of the data instead of a live connection.
+   * **Source Filtering:** Use queries to import only the necessary columns and rows.
+   * **Optimized Data Models:** Build efficient data models and relationships.
 
-[cite_start]To handle large datasets efficiently[cite: 24]:
-* **Optimize the Data Model**: Use a star schema and reduce the number of columns to only what is necessary.
-* **Use Aggregations**: Create summary tables to reduce the number of rows that need to be processed.
-* **Choose the Right Storage Mode**: Use **DirectQuery** or a **Live Connection** in Power BI/Tableau. This mode queries the data source directly instead of importing the entire dataset.
-* **Filter Data at the Source**: Apply filters when connecting to the data source to only bring in the relevant information.
-
-### What chart types do you use for trend analysis?
-
-[cite_start]For trend analysis, the most effective chart types are[cite: 25]:
-* **Line Charts**: Ideal for showing trends over a continuous period. 
-* **Area Charts**: Similar to line charts, but they emphasize the volume or magnitude of the trend over time.
-* **Column Charts**: Useful for comparing values across discrete time periods.
+**7. [cite_start]What chart types do you use for trend analysis?** [cite: 25]
+   * [cite_start]**Line Charts:** The most common choice for showing trends over a continuous period[cite: 10].
+   * **Area Charts:** Similar to line charts but emphasize the volume of change over time.
+   * **Bar/Column Charts:** Effective for comparing discrete time intervals like months or years.
