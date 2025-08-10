@@ -1,4 +1,4 @@
-# Data Analyst Internship - Task 4: Dashboard Design
+# Data Analyst Internship - Task 3: Dashboard Design
 
 [cite_start]This repository contains the deliverables for Task 4 of the Elevate Labs Data Analyst Internship program[cite: 2]. [cite_start]The primary objective of this task was to design an interactive dashboard for business stakeholders using a sales and financial dataset[cite: 4].
 
